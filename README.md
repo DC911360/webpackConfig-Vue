@@ -12,6 +12,10 @@ $ npm install
 $ npm start/ npm run dev
 $ npm run build
 ```
+
+
+### webpackConfig-Vue project-tree
+```
 webpackConfig-Vue
 ├─ .eslintrc.js
 ├─ .gitignore
@@ -23,6 +27,7 @@ webpackConfig-Vue
 │  ├─ favicon.ico
 │  └─ index.html
 ├─ src
+│  ├─ .DS_Store
 │  ├─ App.vue
 │  ├─ main.js
 │  ├─ router
@@ -38,9 +43,7 @@ webpackConfig-Vue
 └─ webpack.pro.js
 
 ```
-
-### webpack.config.js
-
+webpack.config.js
 - entry //入口文件
 - output //出口文件
 - module //loader 加载器
@@ -52,8 +55,8 @@ webpackConfig-Vue
 - resolve // 自动补全 文件扩展名
 - performance // 关闭性能分析，提高打包速度
 
-### 代码引用
 
+### 代码引用
 ```
 const EslintWebpackPlugin = require('eslint-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -278,21 +281,8 @@ module.exports = {
     performance:false,
 
 }
-
 ```
-
-### some probloms
-
-package.json 文件
-
-```
-"dev": "cross-env NODE_ENV=development webpack server --config ./webpack.config.js",
-"build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js"
-
-```
-
-### part of module dependenies
-
+### Dependencies
 ```
 "devDependencies": {
     "@babel/eslint-parser": "^7.25.1",
@@ -320,9 +310,11 @@ package.json 文件
     "webpack-cli": "^5.1.4",
     "webpack-server": "^0.1.2"
   },
- "dependencies": {
+  "dependencies": {
     "element-plus": "^2.7.8",
     "vue": "^3.4.34",
     "vue-router": "^4.4.0"
   }
+  ```
+
 
