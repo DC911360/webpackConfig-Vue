@@ -2,7 +2,8 @@
 
 a webpackConfig-Vue record
 
-#参考 [webpack-配置](https://www.webpackjs.com/configuration/),[webpack-Loaders](https://www.webpackjs.com/loaders//),[webpack-Plugins](https://www.webpackjs.com/plugins/)
+#参考 [webpack-配置](https://www.webpackjs.com/configuration/),[webpack-Loaders](https://www.webpackjs.com/loaders//),[webpack-Plugins](https://www.webpackjs.com/plugins/),
+[vue-loader](https://vue-loader.vuejs.org/zh/)
 
 ### install
 
